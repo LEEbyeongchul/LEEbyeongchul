@@ -23,7 +23,7 @@ ADsP · SQLD · LG Aimers 9기 수료
 
 | 프로젝트 | 무엇을 만들었나 | 성과 | 기술 |
 | :-- | :-- | :-- | :-- |
-| [**대학생 혜택 통합 서비스**](https://github.com/LEEbyeongchul/2026-khuniv-NIC) | 결제수단별 할인 지도와 장학금 매칭 챗봇을 하나로 묶은 풀스택 앱 | AI·SW 융합 페스티벌 **대상** · 넥스트클라우드 이노베이션 AI챌린지 **우수상** | FastAPI, React/TS, pgvector |
+| [**TMI · 대학생 혜택 통합 서비스**](https://github.com/Song-exp/about_money)<br><sub>[우수상 버전](https://github.com/LEEbyeongchul/2026-khuniv-NIC)</sub> | 결제수단별 할인 지도와 장학금 매칭 챗봇을 합친 대학생 생활비 절감 플랫폼. 우수상 이후 일간 크롤 파이프라인·인증·개인정보 보호를 더해 실서비스 배포 | AI·SW 융합 페스티벌 **대상** · 넥스트클라우드 이노베이션 AI챌린지 **우수상** | FastAPI, React/TS, PostgreSQL |
 | [**소비기한 OCR**](https://github.com/LEEbyeongchul/itda3-CODE-subway) | 상품 뒷면 사진에서 소비기한을 읽는 4코어 CPU·오프라인용 경량 OCR 파이프라인 | 제3회 ITDA 연합학술제 본선 · 봉인 500장 **86.2%** | PaddleOCR, OpenCV |
 | [**금융 QA 에이전트**](https://github.com/LEEbyeongchul/ontology-financial-qa-agent) | 온톨로지로 근거를 붙여 답하는 금융상품(채권·ETF·펀드) 질의응답 에이전트 | 미래에셋 AI Festival 출품 · 2주 상시 운영 | HyperCLOVA X, FastAPI, SQLite |
 | [**비디오 프레임 순서 복원**](https://github.com/LEEbyeongchul/snu-video-frame-ordering) | VLM QLoRA 파인튜닝으로 이미지 4장의 시간 순서 복원 | SNU AI Challenge **130팀 중 25위** | Qwen3-VL, PEFT |
