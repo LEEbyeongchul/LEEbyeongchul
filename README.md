@@ -1,43 +1,37 @@
-# 이병철 (LEEbyeongchul)
+# 이병철 · LEEbyeongchul
 
-경희대학교 빅데이터응용학과 · 데이터/ML 엔지니어링
+경희대학교 빅데이터응용학과 · 데이터 분석 / ML 엔지니어링
 
-데이터분석과 ml,Ai엔지니어링에 관심이 있습니다.
-
-
+> 결과보다 검증을 먼저 봅니다. 측정 기준을 정하고, 개선안은 수치로 확인된 것만 채택합니다.
 
 ---
 
-## 프로젝트
+### 🏆 수상
 
-| 프로젝트 | 무엇을 했나 | 스택 |
+| 시기 | 대회 | 결과 |
 | :-- | :-- | :-- |
-| **[온톨로지 금융 QA 에이전트](https://github.com/LEEbyeongchul/ontology-financial-qa-agent)**<br><sub>미래에셋증권 AI Festival 2026 · 3인</sub> | 금융 질문을 SQL로 옮겨 **근거와 함께** 답하는 에이전트. "이 데이터에 없는 축"을 선언으로 막아 그럴듯한 오답을 차단. 평가 2주간 서버 상시 가동 | HyperCLOVA X · FastAPI · SQLite · Docker |
-| **[비디오 프레임 순서 복원](https://github.com/LEEbyeongchul/snu-video-frame-ordering)**<br><sub>SNU AI Challenge 2026 · 3인</sub> | VLM QLoRA 파인튜닝으로 이미지 4장의 시간 순서 복원. 지표 재정의 → 약점 구간 타깃 증강 → 우도 기반 순열 TTA (**holdout +4.76%p**) | Qwen3-VL · PEFT · PyTorch |
-| **[소비기한 OCR 파이프라인](https://github.com/LEEbyeongchul/itda3-CODE-subway)**<br><sub>제3회 ITDA 연합학술제 본선 · 5인</sub> | 상품 뒷면 사진에서 소비기한 추출. 4코어 CPU·오프라인 제약 아래 경량 OCR + 날짜 해석 규칙 + 못 읽은 사진에만 재시도. 오답을 "정답이 사라진 단계"로 진단해 **봉인 500장 86.2%**(예선 84.2%), 장당 2.7~4.0초. 중고거래 식품 게시글 소비기한 자동 입력으로 기획 | PaddleOCR · OpenCV · Python |
-| **[대학생 혜택 통합 서비스](https://github.com/LEEbyeongchul/2026-khuniv-NIC)**<br><sub>경희대 넥스트클라우드 이노베이션 AI챌린지 · 4인 · **우수상(3위)**</sub> | 결제 할인 지도와 장학금 매칭 챗봇을 한 앱으로. 크롤러 · RAG · 상태머신 챗봇 · 프론트까지 풀스택 | FastAPI · React/TS · pgvector |
-| **[무임승차 수요 예측](https://github.com/LEEbyeongchul/Seoul-Subway-FreeRide-Analysis)**<br><sub>머신러닝 수업 팀 프로젝트</sub> | 지하철 노인 무임승차 2050년 수요 전망과 요금 정책 시뮬레이션. 총량 대신 **1인당 승차율 × 인구 추계**로 타깃을 바꿔 외삽 문제를 해결, 2025년 홀드아웃 **MAPE 4.19%**·연간 총량 오차 +0.59% | XGBoost · LightGBM |
+| 2026.09 | 경희대학교 서울캠퍼스 AI·SW 융합 페스티벌 | **대상 (1위)** |
+| 2026.08 | 경희대학교 넥스트클라우드 이노베이션 AI챌린지 | **우수상 (3위)** |
+
+### 📜 자격 · 교육
+
+ADsP · SQLD · LG Aimers 9기 수료
 
 ---
 
-## 수상
+### 📂 프로젝트
 
-- 2026.09 경희대학교 서울캠퍼스 AI·SW 융합 페스티벌 **대상(1위)**
-- 2026.08 경희대학교 넥스트클라우드 이노베이션 AI챌린지 **우수상(3위)** · 대학생 혜택 통합 서비스
-
----
-
-## 작업 방식
-
-**측정 도구를 먼저 검증합니다.** SNU 과제에서는 후보 모델 5개가 전부 무작위 수준인데 정확도가 7~16%로 나오는 모순을 발견했습니다. 원인은 항등 순서 편향이었고, 지표를 다시 정의한 뒤에야 실험이 의미를 갖기 시작했습니다.
-
-**안 되는 것도 기록합니다.** CoT SFT −4.4%p, hard shuffle −1.1%p처럼 기각한 접근을 수치와 원인까지 남깁니다. 다음 사람이 같은 길을 다시 걷지 않도록.
-
-**끝난 뒤에 다시 봅니다.** 금융 에이전트의 가드를 규칙 목록으로 짰는데, 대회가 끝나고 던져본 질문에서 목록에 없던 컬럼으로 또 틀렸습니다. 목록이 아니라 성질로 판정했어야 했다는 걸 그때 알았습니다.
+| 프로젝트 | 무엇을 만들었나 | 성과 | 기술 |
+| :-- | :-- | :-- | :-- |
+| [**소비기한 OCR**](https://github.com/LEEbyeongchul/itda3-CODE-subway) | 상품 뒷면 사진에서 소비기한을 읽는 4코어 CPU·오프라인용 경량 OCR 파이프라인 | 제3회 ITDA 연합학술제 본선 · 봉인 500장 **86.2%** | PaddleOCR, OpenCV |
+| [**대학생 혜택 통합 서비스**](https://github.com/LEEbyeongchul/2026-khuniv-NIC) | 결제수단별 할인 지도와 장학금 매칭 챗봇을 하나로 묶은 풀스택 앱 | 넥스트클라우드 이노베이션 AI챌린지 **우수상** | FastAPI, React/TS, pgvector |
+| [**금융 QA 에이전트**](https://github.com/LEEbyeongchul/ontology-financial-qa-agent) | 온톨로지로 근거를 붙여 답하는 금융상품(채권·ETF·펀드) 질의응답 에이전트 | 미래에셋 AI Festival 출품 · 2주 상시 운영 | HyperCLOVA X, FastAPI, SQLite |
+| [**비디오 프레임 순서 복원**](https://github.com/LEEbyeongchul/snu-video-frame-ordering) | VLM QLoRA 파인튜닝으로 이미지 4장의 시간 순서 복원 | SNU AI Challenge **130팀 중 25위** | Qwen3-VL, PEFT |
+| [**무임승차 수요 예측**](https://github.com/LEEbyeongchul/Seoul-Subway-FreeRide-Analysis) | 1인당 승차율 × 인구 추계로 2050년 노인 무임승차 수요 전망 | 2025 홀드아웃 MAPE **4.19%** | XGBoost, LightGBM |
 
 ---
 
-## 다루는 것
+### 🛠 기술
 
-`Python` `PyTorch` `Transformers / PEFT` `scikit-learn` `XGBoost · LightGBM`
-`FastAPI` `SQLite · PostgreSQL` `Docker` `React · TypeScript` `Pandas · NumPy`
+`Python` `PyTorch` `PEFT` `scikit-learn` `XGBoost · LightGBM` `Pandas`
+`FastAPI` `SQLite · PostgreSQL` `Docker` `React · TypeScript`
